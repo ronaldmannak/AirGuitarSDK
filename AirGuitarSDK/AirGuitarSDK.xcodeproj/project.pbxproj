@@ -22,6 +22,8 @@
 		F8E211C215BB2B250074CEBB /* AGAccessory.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E211C015BB2B250074CEBB /* AGAccessory.m */; };
 		F8E211C515BB2C170074CEBB /* AGAccessoryManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E211C315BB2C170074CEBB /* AGAccessoryManager.h */; };
 		F8E211C615BB2C170074CEBB /* AGAccessoryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E211C415BB2C170074CEBB /* AGAccessoryManager.m */; };
+		F8E211EC15BB8FA60074CEBB /* BoardMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E211EA15BB8FA60074CEBB /* BoardMessage.h */; };
+		F8E211ED15BB8FA60074CEBB /* BoardMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E211EB15BB8FA60074CEBB /* BoardMessage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		F8E211C015BB2B250074CEBB /* AGAccessory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGAccessory.m; sourceTree = "<group>"; };
 		F8E211C315BB2C170074CEBB /* AGAccessoryManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGAccessoryManager.h; sourceTree = "<group>"; };
 		F8E211C415BB2C170074CEBB /* AGAccessoryManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGAccessoryManager.m; sourceTree = "<group>"; };
+		F8E211EA15BB8FA60074CEBB /* BoardMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoardMessage.h; sourceTree = "<group>"; };
+		F8E211EB15BB8FA60074CEBB /* BoardMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoardMessage.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +118,8 @@
 				F8E2116D15BA69EC0074CEBB /* AirGuitarSDK.m */,
 				F8E211BF15BB2B250074CEBB /* AGAccessory.h */,
 				F8E211C015BB2B250074CEBB /* AGAccessory.m */,
+				F8E211EA15BB8FA60074CEBB /* BoardMessage.h */,
+				F8E211EB15BB8FA60074CEBB /* BoardMessage.m */,
 				F8E211C315BB2C170074CEBB /* AGAccessoryManager.h */,
 				F8E211C415BB2C170074CEBB /* AGAccessoryManager.m */,
 				F8E211A415BB25B90074CEBB /* AGMotionManager.h */,
@@ -161,6 +167,7 @@
 				F8E211BE15BB29EC0074CEBB /* AirGuitarSDK.m in Headers */,
 				F8E211C115BB2B250074CEBB /* AGAccessory.h in Headers */,
 				F8E211C515BB2C170074CEBB /* AGAccessoryManager.h in Headers */,
+				F8E211EC15BB8FA60074CEBB /* BoardMessage.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +273,7 @@
 				F8E211A715BB25B90074CEBB /* AGMotionManager.m in Sources */,
 				F8E211C215BB2B250074CEBB /* AGAccessory.m in Sources */,
 				F8E211C615BB2C170074CEBB /* AGAccessoryManager.m in Sources */,
+				F8E211ED15BB8FA60074CEBB /* BoardMessage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

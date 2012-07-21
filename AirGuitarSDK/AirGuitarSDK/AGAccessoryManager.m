@@ -7,6 +7,7 @@
 //
 
 #import "AGAccessoryManager.h"
+#import "AGAccessory.h"
 
 #define AG_PROTOCOL_STRING @"com.yobble.airguitar"
 
@@ -29,10 +30,26 @@
 - (id)init {
     self = [super init];
     if (self) {
-        _connectedAGAccessories = [[NSMutableArray alloc] initWithCapacity:3];
+        _connectedAGAccessories = [[NSMutableDictionary alloc] initWithCapacity:3];
+        _compatibleProtocolStrings = [NSArray arrayWithObjects: AG_PROTOCOL_STRING, nil]; // Future addition
         
-        [[EAAccessoryManager sharedAccessoryManager]   registerForLocalNotifications];  
-        
+        // Check if an Air Guitar compatible device is already connected
+        for (EAAccessory *connectedAccessory in [EAAccessoryManager sharedAccessoryManager].connectedAccessories) {
+            if ([[connectedAccessory protocolStrings] containsObject:AG_PROTOCOL_STRING]) {
+                                 
+                AGAccessory *accessory = [[AGAccessory alloc] initWithAccessory:connectedAccessory protocol:AG_PROTOCOL_STRING];
+                NSString *key = [NSString stringWithFormat:@"%d", connectedAccessory.connectionID];
+                [_connectedAGAccessories setObject:accessory forKey:key];
+                
+                if (_shouldSendNotifications) {
+                    [[NSNotificationCenter defaultCenter]
+                     postNotificationName:@"AGAccessoryDidConnect"
+                     object:accessory];
+                }
+                DLog(@"Connected at init: %@", _connectedAGAccessories);
+            }
+        }
+             
         // Register for all connect and disconnect 
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(accessoryDidConnect:) name:EAAccessoryDidConnectNotification object:nil];
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(accessoryDidDisconnect:) name:EAAccessoryDidDisconnectNotification object:nil];
@@ -55,13 +72,17 @@
     // Check if an Air Guitar compatible accessory was connected
     if ([[connectedAccessory protocolStrings] containsObject:AG_PROTOCOL_STRING]) {
         
-        [_connectedAGAccessories addObject:connectedAccessory];
-        // TODO: establishconnection
-        // Create new AGAccessory object
+        AGAccessory *accessory = [[AGAccessory alloc] initWithAccessory:connectedAccessory protocol:AG_PROTOCOL_STRING];
+        NSString *key = [NSString stringWithFormat:@"%d", connectedAccessory.connectionID];
+        [_connectedAGAccessories setObject:accessory forKey:key];
+
         if (_shouldSendNotifications) {
-            // TODO: fire new notification
+            
+            [[NSNotificationCenter defaultCenter]
+             postNotificationName:@"AGAccessoryDidConnect"
+             object:accessory];
         }
-        NSLog(@"Connected List: %@", _connectedAGAccessories);
+        DLog(@"Connected List: %@", _connectedAGAccessories);
     }
 }
 
@@ -72,30 +93,21 @@
     // Return if a non-Air Guitar accessory was disconnected
     if (![[disconnectedAccessory protocolStrings] containsObject:AG_PROTOCOL_STRING]) return;
     
-    // Delete AGAAccessory object
-    [_connectedAGAccessories removeObject:disconnectedAccessory];
+    // Remove the disconnected accessory from the connectedAGAccessory dictionary
+    NSString *key = [NSString stringWithFormat:@"%d", disconnectedAccessory.connectionID];    
+    [_connectedAGAccessories removeObjectForKey:key];
     if (_shouldSendNotifications) {
-            // TODO: fire new notification
+        [[NSNotificationCenter defaultCenter]
+         postNotificationName:@"AGAccessoryDidDisconnect"
+         object:nil];
     }
     
-    // Remove the disconnected accessory from the connectedAGAccessory array
-    int disconnectedAccessoryIndex = 0;
-    for(EAAccessory *accessory in _connectedAGAccessories) {
-        if ([disconnectedAccessory connectionID] == [accessory connectionID]) {
-            break;
-        }
-        disconnectedAccessoryIndex++;
-    }
-    
-    if (disconnectedAccessoryIndex < [_connectedAGAccessories count]) {
-        [_connectedAGAccessories removeObjectAtIndex:disconnectedAccessoryIndex];
-        NSLog(@"Connected List: %@", _connectedAGAccessories);
-	} else {
-        NSLog(@"could not find disconnected accessory in accessory list");
-    }
+    DLog(@"Disconnected device: %@", disconnectedAccessory);
+    DLog(@"Connected List: %@", _connectedAGAccessories);
 }
 
 @synthesize shouldSendNotifications = _shouldSendNotifications,
-            connectedAGAccessories = _connectedAGAccessories;
+            connectedAGAccessories = _connectedAGAccessories,
+            compatibleProtocolStrings = _compatibleProtocolStrings;
 
 @end

@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AirGuitarSDK.h"
 
-@interface AGViewController : UIViewController
+@interface AGViewController : UITableViewController <UIAccelerometerDelegate, AGAccessoryProtocol> 
+
+
 
 @end

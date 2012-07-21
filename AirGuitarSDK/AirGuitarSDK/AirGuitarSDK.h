@@ -7,6 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "AGAccessory.h"
+#import "AGAccessoryManager.h"
 
 @interface AirGuitarSDK : NSObject
 
