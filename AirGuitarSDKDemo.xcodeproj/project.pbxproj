@@ -1,0 +1,283 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F8E2113D15BA690D0074CEBB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8E2113C15BA690D0074CEBB /* UIKit.framework */; };
+		F8E2113F15BA690D0074CEBB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8E2113E15BA690D0074CEBB /* Foundation.framework */; };
+		F8E2114115BA690D0074CEBB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8E2114015BA690D0074CEBB /* CoreGraphics.framework */; };
+		F8E2114715BA690D0074CEBB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F8E2114515BA690D0074CEBB /* InfoPlist.strings */; };
+		F8E2114915BA690D0074CEBB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E2114815BA690D0074CEBB /* main.m */; };
+		F8E2114D15BA690D0074CEBB /* AGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E2114C15BA690D0074CEBB /* AGAppDelegate.m */; };
+		F8E2115015BA690D0074CEBB /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8E2114E15BA690D0074CEBB /* MainStoryboard.storyboard */; };
+		F8E2115315BA690D0074CEBB /* AGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E2115215BA690D0074CEBB /* AGViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F8E2113815BA690D0074CEBB /* AirGuitarSDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirGuitarSDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8E2113C15BA690D0074CEBB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F8E2113E15BA690D0074CEBB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F8E2114015BA690D0074CEBB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F8E2114415BA690D0074CEBB /* AirGuitarSDKDemo-Info.plist */ = {isa = PBXFileReference; path = "AirGuitarSDKDemo-Info.plist"; sourceTree = "<group>"; };
+		F8E2114615BA690D0074CEBB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F8E2114815BA690D0074CEBB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F8E2114A15BA690D0074CEBB /* AirGuitarSDKDemo-Prefix.pch */ = {isa = PBXFileReference; path = "AirGuitarSDKDemo-Prefix.pch"; sourceTree = "<group>"; };
+		F8E2114B15BA690D0074CEBB /* AGAppDelegate.h */ = {isa = PBXFileReference; path = AGAppDelegate.h; sourceTree = "<group>"; };
+		F8E2114C15BA690D0074CEBB /* AGAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AGAppDelegate.m; sourceTree = "<group>"; };
+		F8E2114F15BA690D0074CEBB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		F8E2115115BA690D0074CEBB /* AGViewController.h */ = {isa = PBXFileReference; path = AGViewController.h; sourceTree = "<group>"; };
+		F8E2115215BA690D0074CEBB /* AGViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AGViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F8E2113515BA690D0074CEBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8E2113D15BA690D0074CEBB /* UIKit.framework in Frameworks */,
+				F8E2113F15BA690D0074CEBB /* Foundation.framework in Frameworks */,
+				F8E2114115BA690D0074CEBB /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F8E2112D15BA690C0074CEBB = {
+			isa = PBXGroup;
+			children = (
+				F8E2114215BA690D0074CEBB /* AirGuitarSDKDemo */,
+				F8E2113B15BA690D0074CEBB /* Frameworks */,
+				F8E2113915BA690D0074CEBB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F8E2113915BA690D0074CEBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F8E2113815BA690D0074CEBB /* AirGuitarSDKDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F8E2113B15BA690D0074CEBB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F8E2113C15BA690D0074CEBB /* UIKit.framework */,
+				F8E2113E15BA690D0074CEBB /* Foundation.framework */,
+				F8E2114015BA690D0074CEBB /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F8E2114215BA690D0074CEBB /* AirGuitarSDKDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F8E2114B15BA690D0074CEBB /* AGAppDelegate.h */,
+				F8E2114C15BA690D0074CEBB /* AGAppDelegate.m */,
+				F8E2114E15BA690D0074CEBB /* MainStoryboard.storyboard */,
+				F8E2115115BA690D0074CEBB /* AGViewController.h */,
+				F8E2115215BA690D0074CEBB /* AGViewController.m */,
+				F8E2114315BA690D0074CEBB /* Supporting Files */,
+			);
+			path = AirGuitarSDKDemo;
+			sourceTree = "<group>";
+		};
+		F8E2114315BA690D0074CEBB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F8E2114415BA690D0074CEBB /* AirGuitarSDKDemo-Info.plist */,
+				F8E2114515BA690D0074CEBB /* InfoPlist.strings */,
+				F8E2114815BA690D0074CEBB /* main.m */,
+				F8E2114A15BA690D0074CEBB /* AirGuitarSDKDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F8E2113715BA690D0074CEBB /* AirGuitarSDKDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8E2115615BA690D0074CEBB /* Build configuration list for PBXNativeTarget "AirGuitarSDKDemo" */;
+			buildPhases = (
+				F8E2113415BA690D0074CEBB /* Sources */,
+				F8E2113515BA690D0074CEBB /* Frameworks */,
+				F8E2113615BA690D0074CEBB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AirGuitarSDKDemo;
+			productName = AirGuitarSDKDemo;
+			productReference = F8E2113815BA690D0074CEBB /* AirGuitarSDKDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F8E2112F15BA690C0074CEBB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = AG;
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = Yobble;
+			};
+			buildConfigurationList = F8E2113215BA690C0074CEBB /* Build configuration list for PBXProject "AirGuitarSDKDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F8E2112D15BA690C0074CEBB;
+			productRefGroup = F8E2113915BA690D0074CEBB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F8E2113715BA690D0074CEBB /* AirGuitarSDKDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F8E2113615BA690D0074CEBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8E2114715BA690D0074CEBB /* InfoPlist.strings in Resources */,
+				F8E2115015BA690D0074CEBB /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F8E2113415BA690D0074CEBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8E2114915BA690D0074CEBB /* main.m in Sources */,
+				F8E2114D15BA690D0074CEBB /* AGAppDelegate.m in Sources */,
+				F8E2115315BA690D0074CEBB /* AGViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F8E2114515BA690D0074CEBB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8E2114615BA690D0074CEBB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F8E2114E15BA690D0074CEBB /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8E2114F15BA690D0074CEBB /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F8E2115415BA690D0074CEBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F8E2115515BA690D0074CEBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F8E2115715BA690D0074CEBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AirGuitarSDKDemo/AirGuitarSDKDemo-Prefix.pch";
+				INFOPLIST_FILE = "AirGuitarSDKDemo/AirGuitarSDKDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F8E2115815BA690D0074CEBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AirGuitarSDKDemo/AirGuitarSDKDemo-Prefix.pch";
+				INFOPLIST_FILE = "AirGuitarSDKDemo/AirGuitarSDKDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F8E2113215BA690C0074CEBB /* Build configuration list for PBXProject "AirGuitarSDKDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8E2115415BA690D0074CEBB /* Debug */,
+				F8E2115515BA690D0074CEBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8E2115615BA690D0074CEBB /* Build configuration list for PBXNativeTarget "AirGuitarSDKDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8E2115715BA690D0074CEBB /* Debug */,
+				F8E2115815BA690D0074CEBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F8E2112F15BA690C0074CEBB /* Project object */;
+}
