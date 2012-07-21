@@ -7,6 +7,8 @@
 //
 
 #import "AirGuitarSDK.h"
+#import "AGAccessory.h"
+#import "AGAccessoryManager.h"
 
 @implementation AirGuitarSDK
 

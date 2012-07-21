@@ -15,7 +15,8 @@
 		F8E2114D15BA690D0074CEBB /* AGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E2114C15BA690D0074CEBB /* AGAppDelegate.m */; };
 		F8E2115015BA690D0074CEBB /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8E2114E15BA690D0074CEBB /* MainStoryboard.storyboard */; };
 		F8E2115315BA690D0074CEBB /* AGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E2115215BA690D0074CEBB /* AGViewController.m */; };
-		F8E2119F15BA6A9A0074CEBB /* libAirGuitarSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F8E2119B15BA6A370074CEBB /* libAirGuitarSDK.a */; };
+		F8E211D215BB3AD00074CEBB /* libAirGuitarSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F8E2119B15BA6A370074CEBB /* libAirGuitarSDK.a */; };
+		F8E211E015BB40020074CEBB /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8E211DF15BB40020074CEBB /* ExternalAccessory.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,10 @@
 		F8E2115115BA690D0074CEBB /* AGViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AGViewController.h; sourceTree = "<group>"; };
 		F8E2115215BA690D0074CEBB /* AGViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AGViewController.m; sourceTree = "<group>"; };
 		F8E2119215BA6A370074CEBB /* AirGuitarSDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AirGuitarSDK.xcodeproj; path = AirGuitarSDK/AirGuitarSDK.xcodeproj; sourceTree = "<group>"; };
+		F8E211DC15BB3B430074CEBB /* AirGuitarSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AirGuitarSDK.h; path = AirGuitarSDK/AirGuitarSDK/AirGuitarSDK.h; sourceTree = "<group>"; };
+		F8E211DD15BB3B430074CEBB /* AGAccessory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AGAccessory.h; path = AirGuitarSDK/AirGuitarSDK/AGAccessory.h; sourceTree = "<group>"; };
+		F8E211DE15BB3B430074CEBB /* AGAccessoryManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AGAccessoryManager.h; path = AirGuitarSDK/AirGuitarSDK/AGAccessoryManager.h; sourceTree = "<group>"; };
+		F8E211DF15BB40020074CEBB /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +62,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8E2119F15BA6A9A0074CEBB /* libAirGuitarSDK.a in Frameworks */,
+				F8E211E015BB40020074CEBB /* ExternalAccessory.framework in Frameworks */,
+				F8E211D215BB3AD00074CEBB /* libAirGuitarSDK.a in Frameworks */,
 				F8E2113D15BA690D0074CEBB /* UIKit.framework in Frameworks */,
 				F8E2113F15BA690D0074CEBB /* Foundation.framework in Frameworks */,
 				F8E2114115BA690D0074CEBB /* CoreGraphics.framework in Frameworks */,
@@ -88,6 +94,10 @@
 		F8E2113B15BA690D0074CEBB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F8E211DC15BB3B430074CEBB /* AirGuitarSDK.h */,
+				F8E211DD15BB3B430074CEBB /* AGAccessory.h */,
+				F8E211DE15BB3B430074CEBB /* AGAccessoryManager.h */,
+				F8E211DF15BB40020074CEBB /* ExternalAccessory.framework */,
 				F8E2113C15BA690D0074CEBB /* UIKit.framework */,
 				F8E2113E15BA690D0074CEBB /* Foundation.framework */,
 				F8E2114015BA690D0074CEBB /* CoreGraphics.framework */,
@@ -263,7 +273,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -281,7 +291,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -294,6 +304,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AirGuitarSDKDemo/AirGuitarSDKDemo-Prefix.pch";
 				INFOPLIST_FILE = "AirGuitarSDKDemo/AirGuitarSDKDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -305,6 +316,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AirGuitarSDKDemo/AirGuitarSDKDemo-Prefix.pch";
 				INFOPLIST_FILE = "AirGuitarSDKDemo/AirGuitarSDKDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

@@ -7,6 +7,8 @@
 //
 
 #import "AGViewController.h"
+#import "AirGuitarSDK.h"
+#import "AGAccessoryManager.h"
 
 @interface AGViewController ()
 
@@ -17,6 +19,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    AGAccessoryManager *manager = [AGAccessoryManager sharedAccessoryManager];
+    
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
