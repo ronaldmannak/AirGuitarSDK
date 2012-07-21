@@ -1,0 +1,403 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F8E2116815BA69EB0074CEBB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8E2116715BA69EB0074CEBB /* Foundation.framework */; };
+		F8E2116E15BA69EC0074CEBB /* AirGuitarSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E2116D15BA69EC0074CEBB /* AirGuitarSDK.m */; };
+		F8E2117615BA69EC0074CEBB /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8E2117515BA69EC0074CEBB /* SenTestingKit.framework */; };
+		F8E2117815BA69EC0074CEBB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8E2117715BA69EC0074CEBB /* UIKit.framework */; };
+		F8E2117915BA69EC0074CEBB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8E2116715BA69EB0074CEBB /* Foundation.framework */; };
+		F8E2117C15BA69EC0074CEBB /* libAirGuitarSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F8E2116415BA69EB0074CEBB /* libAirGuitarSDK.a */; };
+		F8E2118215BA69EC0074CEBB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F8E2118015BA69EC0074CEBB /* InfoPlist.strings */; };
+		F8E2118515BA69EC0074CEBB /* AirGuitarSDKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E2118415BA69EC0074CEBB /* AirGuitarSDKTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F8E2117A15BA69EC0074CEBB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F8E2115B15BA69EB0074CEBB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8E2116315BA69EB0074CEBB;
+			remoteInfo = AirGuitarSDK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F8E2116415BA69EB0074CEBB /* libAirGuitarSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAirGuitarSDK.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8E2116715BA69EB0074CEBB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F8E2116B15BA69EC0074CEBB /* AirGuitarSDK-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AirGuitarSDK-Prefix.pch"; sourceTree = "<group>"; };
+		F8E2116C15BA69EC0074CEBB /* AirGuitarSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AirGuitarSDK.h; sourceTree = "<group>"; };
+		F8E2116D15BA69EC0074CEBB /* AirGuitarSDK.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AirGuitarSDK.m; sourceTree = "<group>"; };
+		F8E2117415BA69EC0074CEBB /* AirGuitarSDKTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AirGuitarSDKTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8E2117515BA69EC0074CEBB /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		F8E2117715BA69EC0074CEBB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		F8E2117F15BA69EC0074CEBB /* AirGuitarSDKTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AirGuitarSDKTests-Info.plist"; sourceTree = "<group>"; };
+		F8E2118115BA69EC0074CEBB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F8E2118315BA69EC0074CEBB /* AirGuitarSDKTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AirGuitarSDKTests.h; sourceTree = "<group>"; };
+		F8E2118415BA69EC0074CEBB /* AirGuitarSDKTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AirGuitarSDKTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F8E2116115BA69EB0074CEBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8E2116815BA69EB0074CEBB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8E2117015BA69EC0074CEBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8E2117615BA69EC0074CEBB /* SenTestingKit.framework in Frameworks */,
+				F8E2117815BA69EC0074CEBB /* UIKit.framework in Frameworks */,
+				F8E2117915BA69EC0074CEBB /* Foundation.framework in Frameworks */,
+				F8E2117C15BA69EC0074CEBB /* libAirGuitarSDK.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F8E2115915BA69EB0074CEBB = {
+			isa = PBXGroup;
+			children = (
+				F8E2116915BA69EB0074CEBB /* AirGuitarSDK */,
+				F8E2117D15BA69EC0074CEBB /* AirGuitarSDKTests */,
+				F8E2116615BA69EB0074CEBB /* Frameworks */,
+				F8E2116515BA69EB0074CEBB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F8E2116515BA69EB0074CEBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F8E2116415BA69EB0074CEBB /* libAirGuitarSDK.a */,
+				F8E2117415BA69EC0074CEBB /* AirGuitarSDKTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F8E2116615BA69EB0074CEBB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F8E2116715BA69EB0074CEBB /* Foundation.framework */,
+				F8E2117515BA69EC0074CEBB /* SenTestingKit.framework */,
+				F8E2117715BA69EC0074CEBB /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F8E2116915BA69EB0074CEBB /* AirGuitarSDK */ = {
+			isa = PBXGroup;
+			children = (
+				F8E2116C15BA69EC0074CEBB /* AirGuitarSDK.h */,
+				F8E2116D15BA69EC0074CEBB /* AirGuitarSDK.m */,
+				F8E2116A15BA69EC0074CEBB /* Supporting Files */,
+			);
+			path = AirGuitarSDK;
+			sourceTree = "<group>";
+		};
+		F8E2116A15BA69EC0074CEBB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F8E2116B15BA69EC0074CEBB /* AirGuitarSDK-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F8E2117D15BA69EC0074CEBB /* AirGuitarSDKTests */ = {
+			isa = PBXGroup;
+			children = (
+				F8E2118315BA69EC0074CEBB /* AirGuitarSDKTests.h */,
+				F8E2118415BA69EC0074CEBB /* AirGuitarSDKTests.m */,
+				F8E2117E15BA69EC0074CEBB /* Supporting Files */,
+			);
+			path = AirGuitarSDKTests;
+			sourceTree = "<group>";
+		};
+		F8E2117E15BA69EC0074CEBB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F8E2117F15BA69EC0074CEBB /* AirGuitarSDKTests-Info.plist */,
+				F8E2118015BA69EC0074CEBB /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F8E2116215BA69EB0074CEBB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		F8E2116315BA69EB0074CEBB /* AirGuitarSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8E2118815BA69EC0074CEBB /* Build configuration list for PBXNativeTarget "AirGuitarSDK" */;
+			buildPhases = (
+				F8E2116015BA69EB0074CEBB /* Sources */,
+				F8E2116115BA69EB0074CEBB /* Frameworks */,
+				F8E2116215BA69EB0074CEBB /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AirGuitarSDK;
+			productName = AirGuitarSDK;
+			productReference = F8E2116415BA69EB0074CEBB /* libAirGuitarSDK.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		F8E2117315BA69EC0074CEBB /* AirGuitarSDKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8E2118B15BA69EC0074CEBB /* Build configuration list for PBXNativeTarget "AirGuitarSDKTests" */;
+			buildPhases = (
+				F8E2116F15BA69EC0074CEBB /* Sources */,
+				F8E2117015BA69EC0074CEBB /* Frameworks */,
+				F8E2117115BA69EC0074CEBB /* Resources */,
+				F8E2117215BA69EC0074CEBB /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F8E2117B15BA69EC0074CEBB /* PBXTargetDependency */,
+			);
+			name = AirGuitarSDKTests;
+			productName = AirGuitarSDKTests;
+			productReference = F8E2117415BA69EC0074CEBB /* AirGuitarSDKTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F8E2115B15BA69EB0074CEBB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = Yobble;
+			};
+			buildConfigurationList = F8E2115E15BA69EB0074CEBB /* Build configuration list for PBXProject "AirGuitarSDK" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F8E2115915BA69EB0074CEBB;
+			productRefGroup = F8E2116515BA69EB0074CEBB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F8E2116315BA69EB0074CEBB /* AirGuitarSDK */,
+				F8E2117315BA69EC0074CEBB /* AirGuitarSDKTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F8E2117115BA69EC0074CEBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8E2118215BA69EC0074CEBB /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F8E2117215BA69EC0074CEBB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F8E2116015BA69EB0074CEBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8E2116E15BA69EC0074CEBB /* AirGuitarSDK.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8E2116F15BA69EC0074CEBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8E2118515BA69EC0074CEBB /* AirGuitarSDKTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F8E2117B15BA69EC0074CEBB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F8E2116315BA69EB0074CEBB /* AirGuitarSDK */;
+			targetProxy = F8E2117A15BA69EC0074CEBB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F8E2118015BA69EC0074CEBB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8E2118115BA69EC0074CEBB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F8E2118615BA69EC0074CEBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F8E2118715BA69EC0074CEBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F8E2118915BA69EC0074CEBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/AirGuitarSDK.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AirGuitarSDK/AirGuitarSDK-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F8E2118A15BA69EC0074CEBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/AirGuitarSDK.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AirGuitarSDK/AirGuitarSDK-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		F8E2118C15BA69EC0074CEBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AirGuitarSDK/AirGuitarSDK-Prefix.pch";
+				INFOPLIST_FILE = "AirGuitarSDKTests/AirGuitarSDKTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		F8E2118D15BA69EC0074CEBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AirGuitarSDK/AirGuitarSDK-Prefix.pch";
+				INFOPLIST_FILE = "AirGuitarSDKTests/AirGuitarSDKTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F8E2115E15BA69EB0074CEBB /* Build configuration list for PBXProject "AirGuitarSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8E2118615BA69EC0074CEBB /* Debug */,
+				F8E2118715BA69EC0074CEBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8E2118815BA69EC0074CEBB /* Build configuration list for PBXNativeTarget "AirGuitarSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8E2118915BA69EC0074CEBB /* Debug */,
+				F8E2118A15BA69EC0074CEBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F8E2118B15BA69EC0074CEBB /* Build configuration list for PBXNativeTarget "AirGuitarSDKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8E2118C15BA69EC0074CEBB /* Debug */,
+				F8E2118D15BA69EC0074CEBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F8E2115B15BA69EB0074CEBB /* Project object */;
+}
