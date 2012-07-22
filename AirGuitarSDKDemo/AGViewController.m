@@ -8,7 +8,11 @@
 
 #import "AGViewController.h"
 
-@interface AGViewController ()
+@interface AGViewController () 
+
+@property (nonatomic, strong) UIView *viewX;
+@property (nonatomic, strong) UIView *viewY;
+@property (nonatomic, strong) UIView *viewZ;
 
 @property (nonatomic, strong) AGAccessoryManager *airGuitarManager;
 @property (nonatomic, strong) UIAccelerometer *iPhoneAccelerometer;
@@ -22,6 +26,23 @@
     
     // Set up Air Guitar accessory
     _airGuitarManager = [AGAccessoryManager sharedAccessoryManager];
+    
+    _viewX = [[UIView alloc] initWithFrame:CGRectZero];
+    _viewX.backgroundColor = [UIColor redColor];
+    _viewX.alpha = 0.5;
+    [self.view addSubview:_viewX];
+    
+    _viewY = [[UIView alloc] initWithFrame:CGRectZero];
+    _viewY.backgroundColor = [UIColor yellowColor];
+    _viewY.alpha = 0.5;
+    [self.view addSubview:_viewY];
+    
+    _viewZ = [[UIView alloc] initWithFrame:CGRectZero];
+    _viewZ.backgroundColor = [UIColor greenColor];
+    _viewZ.alpha = 0.5;
+    [self.view addSubview:_viewZ];
+
+
 }
 
 - (void)viewDidUnload {
@@ -65,6 +86,7 @@
     }
     
     [[NSNotificationCenter defaultCenter] removeObserver:self];
+    
 }
                                             
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -86,6 +108,15 @@
     
     UITableViewCell *cell = (UITableViewCell *) [self.view viewWithTag: tag];    
     cell.detailTextLabel.text = [NSString stringWithFormat: @"%.2f,%.2f,%.2f Max: %.2f,%.2f,%.2f", x, y, z, maxX, maxY, maxZ];
+
+    double xAmplitude = fabs(x * 480.f);
+    double yAmplitude = fabs(y * 480.f);
+    double zAmplitude = fabs(z * 480.f);
+    NSLog(@"%f, %f, %f", xAmplitude, yAmplitude, zAmplitude);
+    
+    _viewX.frame = CGRectMake(0.f, 480.f - xAmplitude, 106, xAmplitude);
+    _viewY.frame = CGRectMake(106.f, 480.f - yAmplitude, 106, yAmplitude);
+    _viewZ.frame = CGRectMake(212.f, 480.f - zAmplitude, 108, zAmplitude);
 }
 
 // ------------------------------------
@@ -168,6 +199,11 @@
     if (0 == index) return 0;
     else return 1;
 }
+
+
+@synthesize viewX = _viewX,
+            viewY = _viewY,
+            viewZ = _viewZ;
 
 @synthesize airGuitarManager = _airGuitarManager,
             iPhoneAccelerometer = _iPhoneAccelerometer;

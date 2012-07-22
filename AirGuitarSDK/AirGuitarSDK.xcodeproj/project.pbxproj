@@ -37,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F8A74FCB15BC882A00BD910C /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = text; name = readme.md; path = ../../readme.md; sourceTree = "<group>"; };
 		F8E2116415BA69EB0074CEBB /* libAirGuitarSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAirGuitarSDK.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8E2116715BA69EB0074CEBB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F8E2116B15BA69EC0074CEBB /* AirGuitarSDK-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AirGuitarSDK-Prefix.pch"; sourceTree = "<group>"; };
@@ -133,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				F8E2116B15BA69EC0074CEBB /* AirGuitarSDK-Prefix.pch */,
+				F8A74FCB15BC882A00BD910C /* readme.md */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
