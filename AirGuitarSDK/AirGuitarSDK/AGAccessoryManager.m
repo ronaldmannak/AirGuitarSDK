@@ -33,7 +33,7 @@
         _connectedAGAccessories = [[NSMutableDictionary alloc] initWithCapacity:3];
         _compatibleProtocolStrings = [NSArray arrayWithObjects: AG_PROTOCOL_STRING, nil]; // Future addition
         
-        // Check if an Air Guitar compatible device is already connected
+        // We don't receive a notification if Air Guitar Move was already connected when the app started or view was loaded, so check for already connected accessories
         for (EAAccessory *connectedAccessory in [EAAccessoryManager sharedAccessoryManager].connectedAccessories) {
             if ([[connectedAccessory protocolStrings] containsObject:AG_PROTOCOL_STRING]) {
                                  

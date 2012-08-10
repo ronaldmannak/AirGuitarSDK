@@ -52,7 +52,7 @@
 + (id) analogInEnable: (u_int8_t) analogInEnableValues;
 + (id) counterLimit: (int) limit;
 
-- (u_int8_t) writeBytesToMessage: (u_int8_t *)bytesToWrite :(u_int8_t)numBytes;
+//- (u_int8_t) writeBytesToMessage: (u_int8_t *)bytesToWrite :(u_int8_t)numBytes;
     
 - (u_int8_t) length;
 - (void) buildMessage: (u_int8_t) d ;

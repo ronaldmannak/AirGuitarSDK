@@ -63,7 +63,6 @@
 
 #pragma mark - Setting Air Guitar accessory
 
-
 - (void) enableAccelerometerData:(BOOL)enable{
 	BoardMessage * message = [BoardMessage analogInLiveEnable:enable];
     if ([[_session outputStream] hasSpaceAvailable]) {
@@ -92,22 +91,7 @@
 
 // low level read method - read data while there is data and space available in the input buffer
 - (void)_readData {
-    
-/*    #define EAD_INPUT_BUFFER_SIZE 128
-    uint8_t buf[EAD_INPUT_BUFFER_SIZE];
-    while ([[_session inputStream] hasBytesAvailable])
-    {
-        NSInteger bytesRead = [[_session inputStream] read:buf maxLength:EAD_INPUT_BUFFER_SIZE];
-        if (_readData == nil) {
-            _readData = [[NSMutableData alloc] init];
-        }
-        [_readData appendBytes:(void *)buf length:bytesRead];
-        //NSLog(@"read %d bytes from input stream", bytesRead);
-    }
-    DLog(@"reading data: %@", _readData); */
-    
-    
-    
+
     u_int8_t buffer[MAX_MESSAGE_LENGTH];
 	NSInteger length = 0;
 	BoardMessage *message;
@@ -156,11 +140,12 @@
         channelNumber = [boardMessage getByte:dataIndex++];
         z=([boardMessage getByte:dataIndex++]<<8) + [boardMessage getByte:dataIndex++];
         
-        float rawX =(x-512.f)/64.f;
-        float rawY =(y-512.f)/64.f;
-        float rawZ =(z-512.f)/64.f;
+        // Store raw acceleration data in struct
+        _acceleration.x = (x-512.f)/64.f;
+        _acceleration.y = (y-512.f)/64.f;
+        _acceleration.z = (z-512.f)/64.f;
         
-        [_delegate accessory: self x: rawX y:rawY z:rawZ];
+        [_delegate accessory: self x: _acceleration.x y:_acceleration.y z:_acceleration.z];
     }
 }
 
@@ -192,5 +177,6 @@
 
 @synthesize delegate = _delegate,
             session = _session,
-            accessory = _accessory;
+            accessory = _accessory,
+            acceleration = _acceleration;
 @end

@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <ExternalAccessory/ExternalAccessory.h>
+#import <CoreMotion/CoreMotion.h>
 
 @class AGAccessory;
 
@@ -18,11 +19,9 @@
 @interface AGAccessory : NSObject <NSStreamDelegate>
 
 @property (nonatomic, weak) id <AGAccessoryProtocol> delegate;
-
-// Add XYZ acceleration data
-
 @property (nonatomic, strong) EASession *session;
 @property (nonatomic, weak) EAAccessory *accessory;
+@property (nonatomic, readonly) CMAcceleration acceleration;
 
 - (id)initWithAccessory: (EAAccessory *)accessory protocol: (NSString *) protocolString; 
 
