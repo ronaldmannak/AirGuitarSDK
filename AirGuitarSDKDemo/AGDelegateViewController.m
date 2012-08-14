@@ -6,9 +6,9 @@
 //  Copyright (c) 2012 Yobble. All rights reserved.
 //
 
-#import "AGViewController.h"
+#import "AGDelegateViewController.h"
 
-@interface AGViewController () 
+@interface AGDelegateViewController () 
 
 @property (nonatomic, strong) UIView *viewX;
 @property (nonatomic, strong) UIView *viewY;
@@ -19,7 +19,7 @@
 
 @end
 
-@implementation AGViewController
+@implementation AGDelegateViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -41,13 +41,14 @@
     _viewZ.backgroundColor = [UIColor greenColor];
     _viewZ.alpha = 0.5;
     [self.view addSubview:_viewZ];
-
-
 }
 
 - (void)viewDidUnload {
     [super viewDidUnload];
-    
+    _airGuitarManager = nil;
+    _viewX = nil;
+    _viewY = nil;
+    _viewZ = nil;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -61,14 +62,13 @@
             accessory.delegate = self;
         }        
     }
-    
+
     // Register for Air Guitar connect and disconnect notifications
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(accessoryDidConnect:) name:@"AGAccessoryDidConnect" object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(accessoryDidDisconnect:) name:@"AGAccessoryDidDisconnect" object:nil];   
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(accessoryDidDisconnect:) name:@"AGAccessoryDidDisconnect" object:nil];
     
     // Set up the iPhone accelerometer for demo purposes. The Air Guitar acccessory works fine if you don't initiate the iPhone's accelerometer.
     [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
-    
     _iPhoneAccelerometer = [UIAccelerometer sharedAccelerometer];
     _iPhoneAccelerometer.updateInterval = 1.f / 60.f;
     _iPhoneAccelerometer.delegate = self;
@@ -86,13 +86,8 @@
     }
     
     [[NSNotificationCenter defaultCenter] removeObserver:self];
-    
 }
-                                            
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
-}
+
 
 // -------------------------------
 #pragma mark - Air Guitar Delegate
@@ -112,13 +107,13 @@
     double xAmplitude = fabs(x * 480.f);
     double yAmplitude = fabs(y * 480.f);
     double zAmplitude = fabs(z * 480.f);
-    NSLog(@"%f, %f, %f", xAmplitude, yAmplitude, zAmplitude);
+    NSLog(@"Delegate: %f, %f, %f", xAmplitude, yAmplitude, zAmplitude);
     
     _viewX.frame = CGRectMake(0.f, 480.f - xAmplitude, 106, xAmplitude);
     _viewY.frame = CGRectMake(106.f, 480.f - yAmplitude, 106, yAmplitude);
     _viewZ.frame = CGRectMake(212.f, 480.f - zAmplitude, 108, zAmplitude);
 }
-
+ 
 // ------------------------------------
 #pragma mark - Air Guitar Notifications
 

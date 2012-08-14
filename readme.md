@@ -3,6 +3,10 @@ Air Guitar SDK for Air Guitar Move
 
 ## What's new
 
+###1.2 (August 14, 2012)
+* Added example how to use Air Guitar in games using CADisplayLink (AGDisplayLinkViewController)
+* Renamed AGViewController to AGDelegateViewController
+
 ###1.1 (August 10, 2012)
 * Added acceleration property to AGAccessory (of type CMAccelerometer) as alternative to delegate
 * Corrected error in read me (thanks [Alex](https://github.com/minichrispy)!)

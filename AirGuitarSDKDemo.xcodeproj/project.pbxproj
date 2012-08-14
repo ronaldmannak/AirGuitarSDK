@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F88BAC0715DB09A500C6C617 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F88BAC0615DB09A500C6C617 /* QuartzCore.framework */; };
+		F8AE44B415DB00DA0026B822 /* AGDisplayLinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8AE44B315DB00DA0026B822 /* AGDisplayLinkViewController.m */; };
 		F8E2113D15BA690D0074CEBB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8E2113C15BA690D0074CEBB /* UIKit.framework */; };
 		F8E2113F15BA690D0074CEBB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8E2113E15BA690D0074CEBB /* Foundation.framework */; };
 		F8E2114115BA690D0074CEBB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8E2114015BA690D0074CEBB /* CoreGraphics.framework */; };
@@ -14,7 +16,7 @@
 		F8E2114915BA690D0074CEBB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E2114815BA690D0074CEBB /* main.m */; };
 		F8E2114D15BA690D0074CEBB /* AGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E2114C15BA690D0074CEBB /* AGAppDelegate.m */; };
 		F8E2115015BA690D0074CEBB /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8E2114E15BA690D0074CEBB /* MainStoryboard.storyboard */; };
-		F8E2115315BA690D0074CEBB /* AGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E2115215BA690D0074CEBB /* AGViewController.m */; };
+		F8E2115315BA690D0074CEBB /* AGDelegateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E2115215BA690D0074CEBB /* AGDelegateViewController.m */; };
 		F8E211D215BB3AD00074CEBB /* libAirGuitarSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F8E2119B15BA6A370074CEBB /* libAirGuitarSDK.a */; };
 		F8E211E015BB40020074CEBB /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8E211DF15BB40020074CEBB /* ExternalAccessory.framework */; };
 /* End PBXBuildFile section */
@@ -37,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F88BAC0615DB09A500C6C617 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F8AE44B215DB00D90026B822 /* AGDisplayLinkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGDisplayLinkViewController.h; sourceTree = "<group>"; };
+		F8AE44B315DB00DA0026B822 /* AGDisplayLinkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGDisplayLinkViewController.m; sourceTree = "<group>"; };
 		F8E2113815BA690D0074CEBB /* AirGuitarSDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirGuitarSDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8E2113C15BA690D0074CEBB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F8E2113E15BA690D0074CEBB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -48,8 +53,8 @@
 		F8E2114B15BA690D0074CEBB /* AGAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AGAppDelegate.h; sourceTree = "<group>"; };
 		F8E2114C15BA690D0074CEBB /* AGAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AGAppDelegate.m; sourceTree = "<group>"; };
 		F8E2114F15BA690D0074CEBB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		F8E2115115BA690D0074CEBB /* AGViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AGViewController.h; sourceTree = "<group>"; };
-		F8E2115215BA690D0074CEBB /* AGViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AGViewController.m; sourceTree = "<group>"; };
+		F8E2115115BA690D0074CEBB /* AGDelegateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AGDelegateViewController.h; sourceTree = "<group>"; };
+		F8E2115215BA690D0074CEBB /* AGDelegateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AGDelegateViewController.m; sourceTree = "<group>"; };
 		F8E2119215BA6A370074CEBB /* AirGuitarSDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AirGuitarSDK.xcodeproj; path = AirGuitarSDK/AirGuitarSDK.xcodeproj; sourceTree = "<group>"; };
 		F8E211DC15BB3B430074CEBB /* AirGuitarSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AirGuitarSDK.h; path = AirGuitarSDK/AirGuitarSDK/AirGuitarSDK.h; sourceTree = "<group>"; };
 		F8E211DD15BB3B430074CEBB /* AGAccessory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AGAccessory.h; path = AirGuitarSDK/AirGuitarSDK/AGAccessory.h; sourceTree = "<group>"; };
@@ -62,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F88BAC0715DB09A500C6C617 /* QuartzCore.framework in Frameworks */,
 				F8E211E015BB40020074CEBB /* ExternalAccessory.framework in Frameworks */,
 				F8E211D215BB3AD00074CEBB /* libAirGuitarSDK.a in Frameworks */,
 				F8E2113D15BA690D0074CEBB /* UIKit.framework in Frameworks */,
@@ -97,6 +103,7 @@
 				F8E211DC15BB3B430074CEBB /* AirGuitarSDK.h */,
 				F8E211DD15BB3B430074CEBB /* AGAccessory.h */,
 				F8E211DE15BB3B430074CEBB /* AGAccessoryManager.h */,
+				F88BAC0615DB09A500C6C617 /* QuartzCore.framework */,
 				F8E211DF15BB40020074CEBB /* ExternalAccessory.framework */,
 				F8E2113C15BA690D0074CEBB /* UIKit.framework */,
 				F8E2113E15BA690D0074CEBB /* Foundation.framework */,
@@ -111,8 +118,10 @@
 				F8E2114B15BA690D0074CEBB /* AGAppDelegate.h */,
 				F8E2114C15BA690D0074CEBB /* AGAppDelegate.m */,
 				F8E2114E15BA690D0074CEBB /* MainStoryboard.storyboard */,
-				F8E2115115BA690D0074CEBB /* AGViewController.h */,
-				F8E2115215BA690D0074CEBB /* AGViewController.m */,
+				F8E2115115BA690D0074CEBB /* AGDelegateViewController.h */,
+				F8E2115215BA690D0074CEBB /* AGDelegateViewController.m */,
+				F8AE44B215DB00D90026B822 /* AGDisplayLinkViewController.h */,
+				F8AE44B315DB00DA0026B822 /* AGDisplayLinkViewController.m */,
 				F8E2114315BA690D0074CEBB /* Supporting Files */,
 			);
 			path = AirGuitarSDKDemo;
@@ -227,7 +236,8 @@
 			files = (
 				F8E2114915BA690D0074CEBB /* main.m in Sources */,
 				F8E2114D15BA690D0074CEBB /* AGAppDelegate.m in Sources */,
-				F8E2115315BA690D0074CEBB /* AGViewController.m in Sources */,
+				F8E2115315BA690D0074CEBB /* AGDelegateViewController.m in Sources */,
+				F8AE44B415DB00DA0026B822 /* AGDisplayLinkViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
